@@ -1,0 +1,35 @@
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-sm-12">
+
+        <h3 class="text-center">Blogs</h3>
+        <hr  class="title-line" />
+
+        <ul class="list-group">
+          <li class="list-group-item" ng-repeat="techNews in blogsTechNews.posts">
+            <a href="#" >
+              <h4 class="list-group-item-heading">{{techNews.title_plain}}</h4> 
+              <p class="list-group-item-text">{{techNews.date}}</p>
+            </a>
+          </li>
+        </ul>
+
+    </div>
+  </div>
+
+</div> <!-- /container -->
+
+
+
+<!-- <ul class="artistlist">
+    <li class="artist cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction">
+      <a href="#/details/{{artists.indexOf(item)}}">
+        <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
+        <div class="info">
+          <h2>{{item.name}}</h2>
+          <h3>{{item.reknown}}</h3>
+        </div>
+      </a>
+    </li>
+  </ul> -->
