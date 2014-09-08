@@ -19,7 +19,7 @@ artistControllers.controller('CoverController', ['$scope', function($scope) {
 // }]);
 
 artistControllers.controller('TechNewsController', ['$scope', '$http', function($scope, $http) {
-  $http.get('http://www.corsproxy.com/futurewavewebdevelopment.com/wp/tech-news/?json=1&count=20').success(function(data){
+  $http.get('http://learning.local/AngularAppUsingWordPressAndJSONAPI/test.php').success(function(data){
 
     $scope.blogsTechNews=data;
     //$scope.artistOrder  = 'name';
