@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', [
   'ngRoute',
-  'blogsControllers'
+  'newsControllers'
 ]);
 
 myApp.config(['$routeProvider', function($routeProvider) {
@@ -17,11 +17,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'partials/list.html',
     controller: 'ListController'
   }).
-  when('/details/:itemId', {
-    templateUrl: 'partials/details.html',
-    controller: 'DetailsController'
-  }).
   otherwise({
-    redirectTo: '/cover'
+    redirectTo: '/'
   });
 }]);

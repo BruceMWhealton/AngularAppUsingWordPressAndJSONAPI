@@ -6,18 +6,15 @@
         <h3 class="text-center">Technology News</h3>
         <hr  class="title-line" />
 
-        <ul class="list-group">
-          <li class="list-group-item" ng-repeat="techNews in blogsTechNews.posts">
-                  <h4 class="list-group-item-heading">{{techNews.title_plain}}</h4> 
-              <p class="list-group-item-text">{{techNews.date}}</p>
-               <div class="list-group-item-text">
-                       {{techNews.content}}
-               </div>
-          </li>
-        </ul>
 
-    </div>
-  </div>
+  <div ng-repeat="techNews in blogsTechNews.posts">
+    <h2> {{ techNews.title_plain }} </h2>
+    <p> {{techNews.date}}</p>
+     {{ techNews.content }}
+  </div><!-- end techNews-->
+
+    </div><!-- end col-sm-12-->
+  </div><!-- end row-->
 
 </div> <!-- /container -->
 

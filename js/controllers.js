@@ -6,7 +6,7 @@ newsControllers.controller('CoverController', ['$scope', function($scope) {
 
 
 newsControllers.controller('TechNewsController', ['$scope', '$http', function($scope, $http) {
-  $http.get('http://www.corsproxy.com/futurewavewebdevelopment.com/wp/tech-news/?json=1&count=100').success(function(data){
+  $http.get('http://futurewavewebdevelopment.com/wp/tech-news/?json=1&count=25').success(function(data){
 
     $scope.blogsTechNews=data;
 
